@@ -49,8 +49,7 @@ export const getAllReviewsMade = async (req, res) => {
                 "country":p.country,
                 "category":p.category,
                 "linkToReviews":CONCAT(["/products/",p._key, "/reviews"])
-            },
-            "rating":x.rating,
+                "rating":x.rating,
           }
     `)
     res.json(response);

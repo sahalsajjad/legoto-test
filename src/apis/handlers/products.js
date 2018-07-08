@@ -4,12 +4,12 @@ const getAll = async (req, res) => {
   const response = await query(`
     FOR product IN products
       RETURN {
-        "productId":product._key
+        "productId":product._key,
         "name":product.name,
         "country":product.country,
         "category":product.category,
         "link":CONCAT(["/products/",product._key]),
-        "linkToReviews":CONCAT(["/products/",p._key, "/reviews"])
+        "linkToReviews":CONCAT(["/products/",product._key, "/reviews"])
     }
     `);
 
@@ -25,9 +25,8 @@ export const getProduct = async (req, res) => {
         "name": product.name,
         "country": product.country,
         "category": product.category,
-        "linkToReviews":CONCAT(["/products/",p._key, "/reviews"])
+        "linkToReviews":CONCAT(["/products/",product._key, "/reviews"])
         }
-    }
     `);
 
   res.json(response);
