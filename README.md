@@ -2,7 +2,7 @@
 
 ----
 ## The scope of this API
-This API is intended as submission for Legoto hiring challenge. Tests are not written, and is only tested with Postman SDK.
+This API is intended as submission for Legoto hiring challenge. Tests are not written, and is only tested with Postman SDK. The current implementation limits to GET requests only for obvious sake of simplicity. However the architecture scales for POST, PUT and DELETE as well.
 
 ## The Data model
 There are 3 main data entities used for this challenge.
