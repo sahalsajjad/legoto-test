@@ -13,7 +13,7 @@ There are 3 main data entities used for this challenge.
 
 Document collection is used for storing **users** and **products** with bare minimum fields, intended for demonstration purpose only. **Reviews** are stored in a graph (**reviews_graph**), whose edges stored in a edgesCollection named reviewed is defined from **Users** to **Products**.
 
-#####Users
+##### Users
 
 - username
 - fullname
@@ -71,7 +71,7 @@ Lists all endpoints.
         }
     ]
 
-######Products
+###### Products
 > /products
 
 *Lists all products. Pagination is not implemented*
@@ -86,7 +86,7 @@ Lists all endpoints.
 
 *Lists all reviews written on that product with that particular id*
 
-######Users
+###### Users
 > /users
 
 *Lists all users.*
@@ -111,7 +111,7 @@ You don't have to set anything up. Just start testing the api by visiting
 
 either with a tool like POSTMAN or the browser.
 
-##Setting up
+## Setting up
 This project makes the following assumptions:
 
 
@@ -121,12 +121,12 @@ DBPASS = ""
 
 DBUSER = "legoto"
 
-####Generating data
+#### Generating data
 In the ArangoDB web interface, create two collections (document store) named **users** and **products** respectively. Create an edge collection named **reviewed** with _from edge (users) and _to edge (products). Then, proceed to creating a graph named **reviews_graph**.
 And now you can import the data files in json format located at folder **data**.
 Please Note that queries depend on the actual exact names of collections as specified above.
 
-####Running locally
+#### Running locally
 cd to the directory containing the legoto project, and run `npm run start`. If everything works as expected, you should see
 `[DEV] Legoto API backend listening on port 3000!
 `
