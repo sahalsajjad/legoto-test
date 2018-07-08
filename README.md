@@ -107,7 +107,7 @@ Lists all endpoints.
 *Lists all products with their average rating*
 
 ## Hosted version
-You don't have to set anything up. Just start testing the api by visiting
+You don't have to set anything up. Just start testing the api by visiting http://ec2-54-175-222-120.compute-1.amazonaws.com:3000/
 
 either with a tool like POSTMAN or the browser.
 
